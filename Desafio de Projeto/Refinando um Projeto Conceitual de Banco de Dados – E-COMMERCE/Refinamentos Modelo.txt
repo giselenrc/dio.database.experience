@@ -1,0 +1,6 @@
+A partir do modelo implementado pela expert, foram criados os seguintes refinamentos conforme proposto no desafio:
+
+    Criação das entidades "PessoaFisica" e "PessoaJuridica" através de especialização a partir da entidade "Cliente";
+    Criação de uma entidade "StatusPedido" onde poderá ser controlada a situação do pedido, contendo informaçõe como data prevista de entrega, status, data do status... através desta entidade poderá ser controlada a entrega e demais status do pedido, bem como seu código de rastreio.
+    Criação de uma entidade "Status" que terá os "domínios" dos possíveis status do pedido;
+    Criação de uma entidade "FormaPagamento" a qual armazenará as possíveis formas de pagamento: cartão de crédito, pix, boleto, etc. e uma entidade que armazenará os dados da forma de pagamento (a princípio focando em cartão de crédito que poderá ter mais de um armazenado. Para um melhor refinamento precisaria verificar como funcionam/são armazenados os dados das outras formas de pagamento.). 
