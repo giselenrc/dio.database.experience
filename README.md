@@ -18,7 +18,7 @@ https://app.diagrams.net/
 [Refinando um Projeto Conceitual de Banco de Dados – E-COMMERCE]
 
 
-Dadas as narrativas abaixo, o Expert criou um modelo conceitual tenco como "entidades principais": Cliente, Produto, Estoque, Pedido, Fornecedor e TerceiroVendedor.
+Dadas as narrativas abaixo, o Expert criou um modelo conceitual "inicial".
 
 Narrativa - Produto:
 
@@ -29,7 +29,7 @@ Narrativa - Produto:
 
 Narrativa - Cliente:
 
-- O cliente pode se cadastrar no site com seu CPF oou CNPJ;
+- O cliente pode se cadastrar no site com seu CPF ou CNPJ;
 - O endereço do cliente irá determinar o valor do frete;
 - Um cliente pode comprar mais de um pedido. Este tem um período de carência para devolução do produto.
 
@@ -39,7 +39,7 @@ Narrativa - Pedido:
 - Um produto ou mais compoem o pedido;
 - O pedido pode ser cancelado;
 
-A partir do modelo criado, foram sugeridos, como desafio, os seguintes refinamentos no modelo:
+A partir do modelo criado, foram sugeridos, como desafio, os seguintes refinamentos:
 
 - Cliente PJ e PF - Uma conta pode ser PJ ou PF, mas não pode ter as duas informações;
 - Pagamento - Pode ter cadastrada mais de uma forma de pagamento;
