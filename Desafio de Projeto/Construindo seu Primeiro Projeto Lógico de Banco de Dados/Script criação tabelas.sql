@@ -110,7 +110,7 @@ CREATE TABLE ecomerce.Estoque (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.ProdutoEmEstoque
+-- Table ecomerce.Produto_Em_Estoque
 -- -----------------------------------------------------
 CREATE TABLE ecomerce.Produto_Em_Estoque (
   id_Estoque INT NOT NULL,
@@ -132,7 +132,7 @@ CREATE TABLE ecomerce.Produto_Em_Estoque (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.RelacaoProdutoPedido
+-- Table ecomerce.Relacao_Produto_Pedido
 -- -----------------------------------------------------
 CREATE TABLE ecomerce.Relacao_Produto_Pedido (
   Id_Produto INT NOT NULL,
@@ -154,7 +154,7 @@ CREATE TABLE ecomerce.Relacao_Produto_Pedido (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.TerceiroVendedor
+-- Table ecomerce.Terceiro_Vendedor
 -- -----------------------------------------------------
 CREATE TABLE  ecomerce.Terceiro_Vendedor (
   id_Terceiro_Vendedor INT NOT NULL AUTO_INCREMENT,
@@ -164,7 +164,7 @@ CREATE TABLE  ecomerce.Terceiro_Vendedor (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.ProdutoPorVendedor - Terceiro
+-- Table ecomerce.Produto_Vendedor_Terceiro
 -- -----------------------------------------------------
 CREATE TABLE ecomerce.Produto_Vendedor_Terceiro (
   Id_Produto INT NOT NULL,
@@ -195,9 +195,9 @@ CREATE TABLE ecomerce.Status (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.StatusPedido
+-- Table ecomerce.Status_Pedido
 -- -----------------------------------------------------
-CREATE TABLE ecomerce.StatusPedido (
+CREATE TABLE ecomerce.Status_Pedido (
   id_Rastreio INT NOT NULL AUTO_INCREMENT,
   Id_Pedido INT NOT NULL,
   data_Prevista_Entrega DATE NOT NULL,
@@ -220,9 +220,9 @@ CREATE TABLE ecomerce.StatusPedido (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.PessoaFisica
+-- Table ecomerce.Pessoa_Fisica
 -- -----------------------------------------------------
-CREATE TABLE ecomerce.PessoaFisica (
+CREATE TABLE ecomerce.Pessoa_Fisica (
   id_Pessoa_Fisica INT NOT NULL AUTO_INCREMENT,
   nome VARCHAR(60) NOT NULL,
   rg VARCHAR(9) NOT NULL,
@@ -239,7 +239,7 @@ CREATE TABLE ecomerce.PessoaFisica (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.PessoaJuridica
+-- Table ecomerce.Pessoa_Juridica
 -- -----------------------------------------------------
 CREATE TABLE ecomerce.Pessoa_Juridica (
   id_Pessoa_Juridica INT NOT NULL AUTO_INCREMENT,
@@ -258,7 +258,7 @@ CREATE TABLE ecomerce.Pessoa_Juridica (
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table ecomerce.DadosPagamento
+-- Table ecomerce.Dados_Pagamento
 -- -----------------------------------------------------
 CREATE TABLE ecomerce.Dados_Pagamento (
   id_Cartao_Credito INT NOT NULL AUTO_INCREMENT,
